@@ -1,0 +1,4 @@
+version "29.8.0"
+services
+    web
+        image:ngix
