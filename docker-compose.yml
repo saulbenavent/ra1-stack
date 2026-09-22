@@ -5,3 +5,10 @@ services:
           - "8080:80"
         volumes:
           - ./web:/var/www/html
+    db:
+        image: mariadb:11
+        env_file: .env
+        volumes:
+          - db_data:/var/lib/mysql
+volumes:
+    db_data:
