@@ -1,4 +1,7 @@
-version "29.8.0"
-services
-    web
-        image:ngix
+services:
+    web:
+        image: php:8.3-apache
+        ports:
+          - "8080:80"
+        volumes:
+          - ./web:/var/www/html
